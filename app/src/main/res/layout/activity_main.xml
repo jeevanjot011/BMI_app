@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="322dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/bmi_calculator"
+        android:textAllCaps="false"
+        android:textColor="#D80008B5"
+        android:textSize="48sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:lineSpacingExtra="20sp"
+        android:text="@string/enter_weight_in_kg"
+        android:textColor="#EC0F0F"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/fill1"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter height in cms "
+        android:textColor="#E41111"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/fill2"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:contentDescription="weight"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textColor="#9C27B0" />
+
+    <ImageButton
+        android:id="@+id/calculate_button"
+        android:layout_width="wrap_content"
+        app:srcCompat="@drawable/logo2"
+        android:layout_gravity="center"
+        android:layout_height="130dp"
+        android:onClick="calculateBMI"
+
+        />
+
+
+    <TextView
+        android:id="@+id/results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Your BMI Score"
+        android:textColor="#FF5722"
+        android:textSize="24sp" />
+
+
+</LinearLayout>
